@@ -1,1 +1,33 @@
-
+package first;
+class ArmstrongNumBetweenRange{
+    public int[] armstrongNumbersInRange(int min , int max){
+ int r,n;
+ int ind=0;
+ int[] q = new int[100];
+ for(int i=min;i<max;i++)
+{
+    int sum = 0;
+    n=i;
+    while(n!=0)
+{
+    r=n%10;
+    sum=sum+r*r*r;
+    n=n/10;
+}
+    
+    if(i==sum) {
+    	q[ind]=sum;
+    	ind++;
+ }
+ }
+return q;
+}
+}
+public class Assignment1Q2 {
+    public static void main (String [] args) {
+ArmstrongNumBetweenRange o1 = new ArmstrongNumBetweenRange();
+int[] b=o1.armstrongNumbersInRange(100,999);
+for(int i =0;i<b.length;i++)
+System.out.println(b[i]);
+}      
+}
