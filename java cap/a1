@@ -1,0 +1,26 @@
+package first;
+class ArmstrongOrNot {
+    public boolean armstrongCheck(int num) {
+int r,sum=0,n=num;
+    while(n!=0)
+{
+   r=n%10;
+   sum=sum+r*r*r;
+   n=n/10;
+}
+if(num==sum)
+return true;
+else 
+return false;
+}
+}
+public class Assignment1Q1 {
+    public static void main(String[] args) {
+ArmstrongOrNot o1 = new ArmstrongOrNot();
+boolean t= o1.armstrongCheck(372);
+if(t==true)
+System.out.println("armstron");
+else 
+System.out.println("not armstron");
+}
+}
