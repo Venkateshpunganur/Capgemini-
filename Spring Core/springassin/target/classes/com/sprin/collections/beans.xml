@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        <bean name="emp1" class="com.sprin.collections.emp">
+        
+        <property name="name" value= "venky"/>
+        <property name="phones">
+        
+        <list>
+        
+        <value>123567654</value>
+        <value>764456789</value>
+        <value>876434567</value>
+        </list>
+        </property>
+        
+        <property name="address">
+        <set>
+        <value>dubai</value>
+        <value>vadodara</value>
+        <value>jalandar</value>
+        </set>
+        </property>
+        
+        <property name="courses">
+        <map>
+        <entry key="java" value="2mont"/>
+        <entry key="ece"  value="4mont"/>
+        
+        </map>
+        
+        </property>
+        
+        
+        
+        
+        
+        
+        </bean>
+        
+        
+        
+        </beans>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+       
+        <bean name = "coll1" class= "com.collections.cap.Question">
+        
+        <property name="questionId" value="11"></property>
+        <property name="question" value="what are south indian states?"></property>
+        <property name="answers">
+        <list>
+        <value>andhra</value>
+        <value>telangana</value> 
+        <value>kerala</value> 
+        <value>tamilnadu</value>      
+        </list>
+        </property>
+        
+        <property name="answers1">
+        <set>
+        <value>andhra</value>
+        <value>telangana</value> 
+        <value>kerala</value> 
+        <value>tamilnadu</value>      
+        </set>
+        </property>
+        
+        <property name="answers11">
+        <map>
+        <entry key= "1" value ="andra"></entry>
+        <entry key= "2" value ="kerala"/>
+        <entry key= "3" value ="karnataka"/>
+        <entry key= "4" value ="tamilnadu"/>
+      
+            
+        </map>
+        </property>
+        
+        
+        
+        
+        
+        </bean>
+        
+        </beans>
