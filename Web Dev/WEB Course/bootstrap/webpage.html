@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <!--JQuery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <!-- Optional theme -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body style="background-color: yellow;">
+   <h2 style="text-align:center">APPLICATION FORM</h2>
+   <form class="form-group ">
+<div class="container  ">
+  
+    <div >
+    
+    <label>username :  </label>
+    <input type="text" class="form-control" placeholder="enter name" >
+   
+    </div>
+
+    <div class="form-group">
+    <label>email :     </label>
+    <input type="email"  class="form-control" placeholder="enter email" >
+    </div>
+
+    <div class="form-group">
+    <label>Date of birth :  </label>
+    <input type="date" class="form-control" placeholder="enter dateofbirt" >
+    </div>
+
+    <div class="form-group">
+    <label>password :  </label>
+    <input type="password"  class="form-control"placeholder="enter password" >
+</div>
+
+<div class="form-rows">
+    <div class="labels">
+      <label for="dropdown" id="dropdown-label">Where did it happen?</label>
+    </div>
+    <div class="fields">
+      <select name="Location of positive event" id="dropdown" class="dropdown">
+          <option value="home">At home</option>
+          <option value="commute">On my commute</option>
+          <option value="work">At work</option>
+          <option value="outside">On the street</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  </div>
+
+
+<div class="form-group">
+    <label>resume :  </label>
+    <input type="file" class="form-control" placeholder="upload resume" >
+</div>
+<p>choose gender</p>
+    <div class="form-group form-inline">
+    <input type="radio" placeholder="enter name" >
+    <label>Male  </label>
+    <input type="radio" placeholder="enter name" >
+    <label>FeMale  </label>
+</div>
+
+
+    
+
+<button type="submit" class="btn btn-success">Submit</button>
+
+</div>
+   </form> 
+</body>
+</html>
